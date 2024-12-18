@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>متجر أدوات يدوية</title>
+  
+</head>
+<body>
+
+<header>
+    <h1>متجر أدوات يدوية</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#" data-section="home" class="active">الرئيسية</a></li>
+        <li><a href="#" data-section="products">المنتجات</a></li>
+        <li><a href="#" data-section="cart">السلة</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="home" class="section">
+        <h2 class="typing-effect">مرحباً بك في متجر الأدوات اليدوية</h2>
+        <p>هنا تجد أفضل الأدوات بأسعار تنافسية.</p>
+        <div class="video-card">
+            <video width="100%" controls>
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>فيديو توضيحي</h2>
+        </div>
+        <div class="contact-form">
+            <h3>تواصل معنا</h3>
+            <input type="text" id="name" placeholder="الاسم">
+            <input type="email" id="email" placeholder="البريد الإلكتروني">
+            <textarea id="message" placeholder="الرسالة"></textarea>
+            <button id="send-button">إرسال</button>
+            <p class="success-message" style="display: none;">تم الإرسال بنجاح! سيتم الرد عليك قريباً.</p>
+        </div>
+    </section>
+
+    <section id="products" class="section products-grid" style="display: none;">
+        <h2>المنتجات</h2>
+        <div class="product" data-price="100">
+            <img src="https://via.placeholder.com/150" alt="منتج 1">
+            <h2>منتج خشبي</h2>
+            <p class="price">السعر: 100 ريال</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+        <div class="product" data-price="100">
+            <img src="https://via.placeholder.com/150" alt="منتج 2">
+            <h2>منتج خشبي</h2>
+            <p class="price">السعر: 100 ريال</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+        <div class="product" data-price="100">
+            <img src="https://via.placeholder.com/150" alt="منتج 3">
+            <h2>منتج خشبي</h2>
+            <p class="price">السعر: 100 ريال</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+    </section>
+
+    <section id="cart" class="section" style="display: none;">
+        <h2>السلة</h2>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+            <p>عدد المنتجات: <span id="cart-count">0</span></p>
+            <p>السعر الكلي: <span id="cart-total">0</span> ريال</p>
+            <button id="checkout-button">إتمام الشراء</button>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</body>
+</html>
